@@ -8,8 +8,5 @@
       "label": "Bookshop Affiliate ID",
       "placeholder": "Enter your affiliate ID from Bookshop.org found at https://bookshop.org/affiliates/profile"
     }
-  ],
-  "includes": [
-    "/book.css"
   ]
 }
