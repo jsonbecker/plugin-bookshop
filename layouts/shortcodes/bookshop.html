@@ -2,20 +2,20 @@
   {{ if .Get "type" }}
     <script src="https://bookshop.org/widgets.js"
             data-type="book"
-            data-affiliate-id="{{ .Params.bookshop_affiliate_id }}"
+            data-affiliate-id="{{ .Site.Params.bookshop_affiliate_id }}"
             data-sku="{{ .Get "isbn" }}">
     </script>
   {{ else }}
-    <a href="https://bookshop.org/a/{{ .Params.bookshop_affiliate_id }}/{{ .Get "isbn" }}">{{ .Inner }}</a>
+    <a href="https://bookshop.org/a/{{ .Site.Params.bookshop_affiliate_id }}/{{ .Get "isbn" }}">{{ .Inner }}</a>
   {{ end }}
 {{ else }}
   {{ if .Get 1 }}
     <script src="https://bookshop.org/widgets.js"
             data-type="book"
-            data-affiliate-id="{{ .Params.bookshop_affiliate_id }}"
+            data-affiliate-id="{{ .Site.Params.bookshop_affiliate_id }}"
             data-sku="{{ .Get "isbn" }}">
     </script>
   {{ else }}
-    <a href="https://bookshop.org/a/{{ .Params.bookshop_affiliate_id }}/{{ .Get 0 }}">{{ .Inner }}</a>
+    <a href="https://bookshop.org/a/{{ .Site.Params.bookshop_affiliate_id }}/{{ .Get 0 }}">{{ .Inner }}</a>
   {{ end }}
 {{ end }}
