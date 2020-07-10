@@ -1,0 +1,12 @@
+{
+  "version": "1.0",
+  "title": "Bookshop",
+  "description": "Adds the ability to get affiliate links and widgets from Bookshop",
+  "fields" :[
+    { 
+      "field": "params.bookshop_affiliate_id",
+      "label": "Bookshop Affiliate ID",
+      "placeholder": "Enter your affiliate ID from Bookshop.org found at https://bookshop.org/affiliates/profile"
+    }
+  ]
+}
