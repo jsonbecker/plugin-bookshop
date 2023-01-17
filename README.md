@@ -31,7 +31,7 @@ You can also use the Bookshop.org widgets. This requires a little more work, and
 or
 
 ```html
-{{ bookshop 9781524760380 book_button >}} 
+{{< bookshop 9781524760380 book_button >}} 
 ```
 
 Which will turn into the `book` or `book_button` widgets they offer with the correct embed code. 
@@ -42,3 +42,11 @@ You can also use named parameters, of which there are two:
 - `type` which indicates which embed, book or book_button you want.
 
 When not specifying the `type` by name or as the second parameter, you must wrap the link text you want to use in this shortcode or nothing will appear on your site.
+
+### Lists
+
+Bookshop now supports list widgets. After considering overloading the `bookshop` shortcode with a `type="list"`, I decided to support this with a separate shortcode. This way the `bookshop` shortcode always supports widgets related to a single book. With this new shortcode, you only need to supply the slug for your list:
+
+```html
+{{< bookshoplist read-2022-a28bc91a-fc4a-4573-bfa4-15c42345ca33 >}}
+```
